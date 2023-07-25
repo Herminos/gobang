@@ -6,11 +6,15 @@ import { setChessBoardState, currentPlayer, toogleCurrentPlayer } from "./ChessB
 function ChessBoard(){
     const [currentPlayerState,setCurrentPlayerState]=useState('X');
 
-    function handleClickFactory(row,column,reRenderCallback){
+    function handleClickFactory(row,column,reRenderCallback,clicked,setClicked){
         return function(){
+            if(clicked){
+                return;
+            }
             setChessBoardState(row,column,currentPlayer);
             toogleCurrentPlayer();
             setCurrentPlayerState(currentPlayer);
+            setClicked(true);
             reRenderCallback();//To re-render the square to disaply the chess, It will be a setState() call
         }
     }//A function factory to generate a function to handle click event for each square
