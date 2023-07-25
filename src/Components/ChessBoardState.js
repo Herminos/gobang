@@ -1,6 +1,6 @@
 import { boardSize } from './ChessBoardConfig';
 
-let chessBoardState=Array.from({ length: boardSize }, () => new Array(boardSize).fill('\u00A0'));
+let chessBoardState=Array.from({ length: boardSize+5 }, () => new Array(boardSize).fill('\u00A0'));
 
 function setChessBoardState(row,col,value){
     chessBoardState[row][col]=value;
