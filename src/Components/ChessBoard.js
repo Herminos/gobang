@@ -30,12 +30,14 @@ function ChessBoard(){
             <ChessBoardRow num={boardSize} row={i} handleClickFactory={handleClickFactory}/>
             </li>)
     }
-    return (<>
-        <ul>{row}</ul>
-        {!finished?<h1>Current Player:{currentPlayerState}</h1>:
-        <h1>Winner:{winner}</h1>}
-
-    </>
+    return (
+    <div>
+        <ul className="board">{row}</ul>
+        <div className="showState">
+            {!finished?<h1>Current Player:{currentPlayerState}</h1>:
+            <h1>Winner:{winner}</h1>}
+        </div>
+    </div>
     );
 
 }
