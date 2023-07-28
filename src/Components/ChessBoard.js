@@ -15,7 +15,7 @@ function ChessBoard(){
             setChessBoardState(row,column,currentPlayer);
             if(judgedWinner(row,column,currentPlayer)){
                 setWinner(currentPlayer);
-            }
+            }//Notice that this if must be ahead of toogleCurrentPlayer() because the winner is the last player
             toogleCurrentPlayer();
             setCurrentPlayerState(currentPlayer);
             setClicked(true);
