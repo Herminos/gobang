@@ -34,8 +34,12 @@ function ChessBoard(){
     <div>
         <ul className="board">{row}</ul>
         <div className="showState">
-            {!finished?<h1>Current Player:{currentPlayerState}</h1>:
-            <h1>Winner:{winner}</h1>}
+            <h1 className='state'>Gobang Chess Game!</h1>
+            <h1 className='state'>Made by Herminos</h1>
+            <h1 className='state'>Made with React</h1>
+            <h1 className='state'>I HATE CSS!</h1>
+            {!finished?<h1 className='state'>Current Player:{currentPlayerState}</h1>:
+            <h1 className='state'>Winner:{winner}</h1>}
         </div>
     </div>
     );
