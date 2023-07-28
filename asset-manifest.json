@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gobang/static/css/main.c7adc064.css",
+    "main.js": "/gobang/static/js/main.6aa10c0b.js",
+    "static/js/787.f0d20a86.chunk.js": "/gobang/static/js/787.f0d20a86.chunk.js",
+    "index.html": "/gobang/index.html",
+    "main.c7adc064.css.map": "/gobang/static/css/main.c7adc064.css.map",
+    "main.6aa10c0b.js.map": "/gobang/static/js/main.6aa10c0b.js.map",
+    "787.f0d20a86.chunk.js.map": "/gobang/static/js/787.f0d20a86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7adc064.css",
+    "static/js/main.6aa10c0b.js"
+  ]
+}
